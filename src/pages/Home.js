@@ -27,7 +27,7 @@ const Home = () => {
     if (debouncedSearchTerm && allGames) {
       setFilteredGames(
         allGames.filter((game) =>
-          game.title.toLowerCase().includes(debouncedSearchTerm)
+          game.title.toLowerCase().includes(debouncedSearchTerm.toLowerCase())
         )
       );
     }
