@@ -1,0 +1,22 @@
+.footer {
+  margin-top: auto;
+  background: var(--bg-footer);
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.created {
+  margin-top: 1rem;
+}
+
+.heart {
+  display: inline-block;
+  margin-bottom: -3px;
+  color: #ff0000;
+}
+
+@media screen and (max-width: 576px) {
+  .footer {
+    display: none;
+  }
+}

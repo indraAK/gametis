@@ -1,0 +1,53 @@
+.form {
+  max-width: 40rem;
+  margin: 3rem auto;
+}
+
+.form label {
+  display: block;
+  position: relative;
+  min-height: 5rem;
+  border-radius: 5px;
+  overflow-x: hidden;
+}
+
+.input {
+  appearance: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  padding-left: 4rem;
+  border: none;
+  background-color: #1c1e22;
+  color: #e7e7e7;
+  caret-color: #fff;
+  font-family: inherit;
+  font-size: 1.5rem;
+}
+
+.input:focus {
+  outline: none;
+  background-color: #181a1d;
+}
+
+.input::placeholder {
+  color: #929292;
+}
+
+.search_icon {
+  position: absolute;
+  left: 1.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #929292;
+  font-size: 2rem;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.games_content {
+  margin-top: 5rem;
+}

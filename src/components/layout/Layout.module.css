@@ -1,0 +1,10 @@
+.main_content {
+  margin: 12rem auto 10rem;
+}
+
+@media screen and (max-width: 576px) {
+  .main_content {
+    margin: 0 auto;
+    padding: 3rem 2rem 13rem;
+  }
+}

@@ -1,0 +1,100 @@
+.card {
+  background: #32383e;
+  border-radius: 5px;
+  overflow-x: hidden;
+  box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.card_header {
+  display: block;
+  position: relative;
+  height: 160px;
+  overflow: hidden;
+}
+
+@supports (aspect-ratio: 16 / 10) {
+  .card_header {
+    aspect-ratio: 16 / 10;
+    height: initial;
+  }
+}
+
+.thumbnail {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card_body {
+  padding: 2rem;
+}
+
+.title {
+  color: #aaaaaa;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.title:hover {
+  color: #cfcfcf;
+  text-decoration: underline;
+}
+
+.description {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card_footer {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card_footer div {
+  display: flex;
+  align-items: center;
+}
+
+.badge {
+  display: inline-block;
+  font-size: 1.2rem;
+  padding: 2px 8px;
+  border-radius: 8px;
+  background-color: #7a8288;
+  color: #000000;
+  font-weight: 700;
+  margin-right: 1rem;
+}
+
+.platform_icon {
+  display: inline-block;
+  color: #7a8288;
+  font-size: 2rem;
+}
+
+.btn {
+  appearance: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.heart_icon {
+  color: #aaaaaa;
+  font-size: 2rem;
+}
+
+.heart_icon:hover {
+  color: #fff;
+}

@@ -1,0 +1,115 @@
+.game_details {
+  margin-top: 2rem;
+}
+
+.article {
+  display: flow-root;
+}
+
+.thumbnail {
+  float: left;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 6px 1.2rem rgba(0, 0, 0, 0.15);
+}
+
+.title {
+  font-size: 2.8rem;
+}
+
+.article h3 {
+  font-weight: 600;
+  font-size: 2.2rem;
+  margin-top: 5rem;
+}
+
+.info_list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.platform {
+  display: flex;
+  align-items: center;
+}
+
+.platform_icon {
+  display: inline-block;
+  margin-right: 1rem;
+  font-size: 2rem;
+}
+
+.screenshot_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.screenshot_grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+  box-shadow: 0 4px 1.2rem rgba(0, 0, 0, 0.1);
+}
+
+.btn_favorite {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background-color: #000000;
+  position: fixed;
+  right: 2rem;
+  bottom: 3rem;
+  z-index: 999;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.25);
+}
+
+.heart_icon {
+  display: inline-block;
+  color: #fff;
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .thumbnail {
+    float: none;
+    margin: 0;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    margin-bottom: 2rem;
+  }
+
+  .info_list {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .game_details {
+    margin-top: 0;
+  }
+
+  .title {
+    font-size: 2.4rem;
+  }
+
+  .article h3 {
+    font-size: 2rem;
+  }
+
+  .btn_favorite {
+    right: 1rem;
+    bottom: 8rem;
+  }
+}

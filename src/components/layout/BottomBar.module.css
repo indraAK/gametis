@@ -1,0 +1,45 @@
+.navigation {
+  background: var(--bg-header);
+  box-shadow: 0 0.4rem 1.5rem rgba(0, 0, 0, 0.2);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navigation ul {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+.navigation a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: var(--font-secondary);
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.navigation a:hover,
+.navigation a.active {
+  color: #fff;
+}
+
+.navigation span {
+  display: inline-block;
+  font-size: 1.4rem;
+  margin-top: 3px;
+}
+
+.icon {
+  font-size: 2rem;
+}
+
+@media screen and (min-width: 576px) {
+  .navigation {
+    display: none;
+  }
+}
