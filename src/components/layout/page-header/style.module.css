@@ -1,0 +1,40 @@
+.page_header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 60px;
+  background: var(--bg-header);
+  display: flex;
+  align-items: center;
+  padding: 0 2rem;
+  border-bottom: #333333 1px solid;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.page_title {
+  font-size: 1.6rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #eaeaea;
+}
+
+.back_btn {
+  background: none;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+}
+
+@media screen and (min-width: 576px) {
+  .page_header {
+    display: none;
+  }
+}
