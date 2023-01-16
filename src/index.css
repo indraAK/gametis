@@ -5,6 +5,7 @@
   --font-secondary: "Inter", sans-serif;
   --bg-header: #272b30;
   --bg-footer: #1c1e22;
+  --clr-sky-primary: #38bdf8;
 }
 
 * {
@@ -13,18 +14,23 @@
   padding: 0;
 }
 
-html {
-  font-size: 62.5%;
+html,body{
   height: 100%;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 body {
-  height: 100%;
   background-color: #2a2e33;
   color: #aaa;
   font-family: var(--font-primary);
   font-size: 1.6rem;
   line-height: 1.5;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 #root {
@@ -39,6 +45,7 @@ ul {
 
 img {
   display: block;
+  max-width: 100%;
 }
 
 a {
@@ -62,14 +69,35 @@ a {
   text-shadow: -1px -1px 0 rgb(0 0 0 / 30%);
 }
 
-.subtitle {
-  font-size: 1.5rem;
-  margin-top: 7px;
-  color: #b6b6b6;
-}
-
 .text-center {
   text-align: center;
+}
+
+.text-lead {
+  color: var(--clr-sky-primary);
+}
+
+.btn{
+  background: none;
+  outline: 0;
+  border: 1px solid transparent;
+  user-select: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1.6rem;
+  white-space: nowrap;
+  text-transform: capitalize;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  padding: 0 20px;
+  height: 45px;
+}
+
+.btn-primary{
+  background-color: #0ea5e9;
+  color: #fff;
 }
 
 @media screen and (max-width: 576px) {
