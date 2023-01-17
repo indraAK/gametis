@@ -12,7 +12,7 @@ const HomePage = () => {
   const { fetcher } = useFetcher(process.env.REACT_APP_API_BASE_URL);
   const { data: games, error, isLoading } = useSWR("api/games", fetcher);
   const [searchTerm, setSearchTerm] = useState("");
-  const debouncedKeyword = useDebounce(searchTerm, 300);
+  const debouncedKeyword = useDebounce(searchTerm, 100);
   const [isMobileView, setIsMobileView] = useState(
     window.matchMedia("(max-width:576px)").matches
   );

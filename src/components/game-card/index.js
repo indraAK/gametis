@@ -19,7 +19,7 @@ const GameCard = ({ game }) => {
         <div className={styles.card_footer}>
           <div>
             <span className={styles.badge}>{game.genre}</span>
-            {game.platform.includes("PC (Windows)") ? (
+            {game.platform.includes("Windows") ? (
               <AiFillWindows
                 className={styles.platform_icon}
                 title="Available on Windows"

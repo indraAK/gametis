@@ -117,9 +117,11 @@ const GameDetails = () => {
           )}
 
           <button
-            aria-label="like games"
+            aria-label={isInLikedGames(game.id) ? "Dislike" : "Like"}
             className={`btn ${styles.btn_like}`}
-            title="Like Games"
+            title={
+              isInLikedGames(game.id) ? "Dislike This Games" : "Like This Games"
+            }
             onClick={() =>
               isInLikedGames(game.id) ? removeGame(game.id) : addGames(game)
             }
