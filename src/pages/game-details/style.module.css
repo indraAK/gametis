@@ -1,5 +1,5 @@
 .content_details {
-  margin-top: 3rem;
+  padding-top: 3rem;
 }
 
 .article {
@@ -45,14 +45,14 @@
 
 .screenshot_grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(28rem, 100%), 1fr));
   gap: 2rem;
   margin-top: 2rem;
 }
 
 .screenshot_grid img {
   width: 100%;
-  height: 100%;
+  aspect-ratio: 16 / 9;
   object-fit: cover;
   border-radius: 5px;
   box-shadow: 0 4px 1.2rem rgba(0, 0, 0, 0.1);
@@ -72,7 +72,7 @@
   transition: 200ms;
 }
 
-.btn_like:active{
+.btn_like:active {
   transform: scale(0.85);
 }
 
@@ -93,9 +93,8 @@
 }
 
 @media screen and (max-width: 576px) {
-  .game_details {
-    /* margin-top: 0; */
-    margin-top: 5rem;
+  .content_details {
+    padding-top: 8rem;
   }
 
   .title {
