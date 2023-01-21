@@ -9,7 +9,7 @@ Memiliki desain UI yang kekinian, elegan dan responsive.
 2. Buat file `.env.local`, isi environment variables yang digunakan bisa lihat pada file [`.env.example`](./.env.example)
 3. Jalankan server pengembangan menggunakan `npm start`
 
-Untuk production, gunakan script ini: `yarn build && yarn start`
+Untuk production, gunakan script ini: `npm run build`
 
 ## Tech Stacks
 
