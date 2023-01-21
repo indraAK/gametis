@@ -5,9 +5,9 @@ Memiliki desain UI yang kekinian, elegan dan responsive.
 
 ## Cara Penggunaan
 
-1. Install dependencies menggunakan `npm install`.
-2. Buat file `.env.local`, isi environment variables yang digunakan bisa lihat pada file [`.env.example`](./.env.example).
-3. Jalankan server pengembangan menggunakan `npm start`.
+1. Install dependencies menggunakan `npm install`
+2. Buat file `.env.local`, isi environment variables yang digunakan bisa lihat pada file [`.env.example`](./.env.example)
+3. Jalankan server pengembangan menggunakan `npm start`
 
 Untuk production, gunakan script ini: `yarn build && yarn start`
 
