@@ -3,20 +3,13 @@
 Gametis adalah web katalog game gratis (free-to-play) yang dapat di mainkan di platform PC & Browser.
 Memiliki desain UI yang kekinian, elegan dan responsive.
 
-## Cara Penggunaan 
+## Cara Penggunaan
 
-Untuk mengkloning dan menjalankan aplikasi ini, pastikan bahwa [Git](https://git-scm.com) dan [Node.js](https://nodejs.org/en/download/) sudah terinstal di komputer anda, lalu jalankan command line berikut:
+1. Install dependencies menggunakan `npm install`.
+2. Buat file `.env.local`, isi environment variables yang digunakan bisa lihat pada file [`.env.example`](./.env.example).
+3. Jalankan server pengembangan menggunakan `npm start`.
 
-```bash
-# Clone this repository
-$ git clone https://github.com/indraAK/gametis.git
-
-# Install dependencies
-$ npm install
-
-# Run the app
-$ npm start
-```
+Untuk production, gunakan script ini: `yarn build && yarn start`
 
 ## Tech Stacks
 
@@ -24,3 +17,6 @@ $ npm start
 - [CSS Modules](https://github.com/css-modules/css-modules)
 - [SWR: React Hooks for Data Fetching](https://swr.vercel.app/)
 - [Zustand](https://github.com/pmndrs/zustand)
+
+## Data Game
+Semua data Game yang digunakan pada proyek ini berasal dari [Free-to-Play Games Database](https://rapidapi.com/digiwalls/api/free-to-play-games-database)
