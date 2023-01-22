@@ -1,4 +1,4 @@
-export default function useFetcher(resourceURL){
+export default function useFetcher(resourceURL) {
   const fetcher = async (endpoint) => {
     const res = await fetch(`${resourceURL}/${endpoint}`, {
       headers: {
@@ -17,7 +17,7 @@ export default function useFetcher(resourceURL){
     }
 
     return res.json();
-  }
+  };
 
-  return {fetcher}
+  return { fetcher };
 }

@@ -42,7 +42,7 @@ const PopularGames = () => {
 
       <div className={styles.filter_container}>
         <div className={styles.filter}>
-          <label htmlFor="category">More Top 10's:</label>
+          <label htmlFor="category">More Top 10&apos;s:</label>
           <select
             id="category"
             defaultValue="select_category"

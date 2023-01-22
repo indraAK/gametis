@@ -36,14 +36,14 @@ const HomePage = () => {
   }
 
   useEffect(() => {
-    function onResize() {
-      const { matches } = window.matchMedia("(max-width:576px)");
+    const mqlChangeHandler = ({ matches }) =>
       matches ? setIsMobileView(true) : setIsMobileView(false);
-    }
 
-    window.addEventListener("resize", onResize);
+    window
+      .matchMedia("(max-width:576px)")
+      .addEventListener("change", mqlChangeHandler);
 
-    return () => window.removeEventListener("resize", onResize);
+    return () => window.removeEventListener("change", mqlChangeHandler);
   }, []);
 
   return (
@@ -55,7 +55,7 @@ const HomePage = () => {
             Games with Ease{" "}
           </h1>
           <p className={`text-muted ${styles.content_subtitle}`}>
-            Track what you've played and search for what to play next.
+            Track what you&apos;ve played and search for what to play next.
           </p>
           <button
             onClick={goToSearchForm}
