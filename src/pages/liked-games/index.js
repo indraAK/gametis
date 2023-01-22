@@ -3,7 +3,7 @@ import styles from "./style.module.css";
 import { useGameStore } from "../../stores/liked-games";
 
 const LikedGames = () => {
-  const likedGames = useGameStore(state => state.games)
+  const likedGames = useGameStore((state) => state.games);
 
   return (
     <section className={`container ${styles.content_liked}`}>

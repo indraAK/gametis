@@ -11,7 +11,11 @@ const Footer = () => {
           © {currentYear} Gametis, all rights reserved.
         </p>
         <p className={styles.created}>
-          Made with <span><AiFillHeart className={styles.heart} /></span> by Indra
+          Made with{" "}
+          <span>
+            <AiFillHeart className={styles.heart} />
+          </span>{" "}
+          by Indra
         </p>
       </div>
     </footer>

@@ -1,9 +1,7 @@
-import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import { IoGameController } from "react-icons/io5";
 import styles from "./style.module.css";
 import { navbarLinks } from "../../../utils/constants";
-import SearchForm from "../../search-form";
 
 const activeStyle = {
   color: "#38bdf8",
